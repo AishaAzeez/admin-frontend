@@ -21,7 +21,7 @@ function View() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get('https://admin-backend-8x2p.onrender.com/getattendanceModel')
+    axios.get('https://admin-backend-e776.onrender.com/getattendanceModel')
       .then(response => {
         setUsers(response.data);
         setFilteredUsers(response.data);
@@ -144,7 +144,7 @@ function View() {
   };
 
   const handleDeleteUsers = () => {
-    axios.delete('https://admin-backend-8x2p.onrender.com/deleteUsers', { data: { ids: selectedUsers } })
+    axios.delete('https://admin-backend-e776.onrender.com/deleteUsers', { data: { ids: selectedUsers } })
     .then(response => {
       console.log(response.data.message); // Log the response message
       setUsers(users.filter(user => !selectedUsers.includes(user._id)));
