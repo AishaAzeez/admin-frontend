@@ -225,10 +225,9 @@ function View() {
                   <th>Email</th>
                   <th>Total Time</th>
                   <th>Present</th>
-                  <th>
+                  <th>Select
                     <Form.Check 
                       type="checkbox"
-                      name="Select"
                       checked={selectAll}
                       onChange={handleSelectAll}
                     />
