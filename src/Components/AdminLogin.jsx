@@ -75,7 +75,7 @@ const ObservationText = styled.p`
   font-family: "Helvetica", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 300;
-  color: black;
+  color: white;
   margin-top: 10px;
 
   @media (max-width: 1250px) {

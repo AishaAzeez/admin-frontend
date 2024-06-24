@@ -32,8 +32,8 @@ function View() {
 
   const filterData = () => {
     const filtered = users.filter(user => {
-      const [year, month, day] = user.loginDate.split('-');
-      const formattedLoginDate = `${day}-${month}-${year}`;
+      const [day, month, year] = user.loginDate.split('-');
+      const formattedLoginDate = `${year}-${month}-${day}`;
       const loginDate = new Date(formattedLoginDate);
 
       const startDateObject = startDate ? new Date(startDate) : null;
