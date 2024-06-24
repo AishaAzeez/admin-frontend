@@ -228,6 +228,7 @@ function View() {
                   <th>
                     <Form.Check 
                       type="checkbox"
+                      name="Select"
                       checked={selectAll}
                       onChange={handleSelectAll}
                     />
@@ -256,8 +257,8 @@ function View() {
           {filteredUsers.length > displayLimit && (
             <Button onClick={handleShowMore} variant="link">
               Show More
-            </Button>
-          )}
+            </Button> 
+          )} <br />
           {displayLimit > 10 && (
             <Button onClick={handleShowLess} variant="link">
               Show Less
@@ -265,7 +266,7 @@ function View() {
           )}
           <Button onClick={handleDeleteUsers} className="mt-3" variant="danger">
             Delete Selected
-          </Button><br></br><br></br>
+          </Button><br></br>
           <Button onClick={handleButtonClick} className="mt-3">
             {showTotalDays ? 'Hide Total Days' : 'View Total Days Worked'}
           </Button>
