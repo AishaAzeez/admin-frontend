@@ -263,11 +263,9 @@ function View() {
               Show Less
             </Button>
           )}
-
           <Button onClick={handleDeleteUsers} className="mt-3" variant="danger">
             Delete Selected
-          </Button>
-
+          </Button><br></br><br></br>
           <Button onClick={handleButtonClick} className="mt-3">
             {showTotalDays ? 'Hide Total Days' : 'View Total Days Worked'}
           </Button>
